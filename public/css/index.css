@@ -96,7 +96,7 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
+header { padding: 5px;
 	border-bottom: 1px dashed var(--color-gray-20);
 }
 header:after {
