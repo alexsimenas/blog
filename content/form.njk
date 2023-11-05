@@ -4,28 +4,23 @@ eleventyNavigation:
   key: Form
   order: 4
 ---
+	
 <h1>Form</h1>
 <form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" id="name" name="name" /></label>
+    <label class="flex-sm-fill text-sm-center">First Name: <input type="text" id=" firstname" name="name" /></label>
   </p>
   <p>
-    <label>Your Email: <input type="email" id="email" name="email" /></label>
+    <label class="flex-sm-fill text-sm-center">Second Name: <input type="text" id="secondname" name="name" /></label>
   </p>
   <p>
-    <label
-      >Your Role:
-      <select name="role[]" multiple>
-        <option value="leader">Leader</option>
-        <option value="follower">Follower</option>
-      </select></label
-    >
+    <label class="flex-sm-fill text-sm-center">Your Email: <input type="email" id="email" name="email" /></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label class="flex-sm-fill text-sm-center">Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button class="form_submit" type="submit">Send</button>
+    <button class="form_submit" type="submit" >Send</button>
   </p>
 </form>
 <script>
