@@ -1,24 +1,47 @@
 ---
 title: Simple Calculation.
 description: Today I used Javascript to make a simple calculator.
-date: 2018-05-01
+date: 2023-11-17
 tags:
   - another tag
 ---
 Check my simple calculator on the link <a href="https://codepen.io/Alex-Simenas/pen/MWLEeJM?editors=1011">https://codepen.io/Alex-Simenas/pen/MWLEeJM?editors=1011</a>
 
-## Section Header
+## Javascript simple caltulator
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Listen if you dont want to press a link then check it out code bellow.
 
-```diff-js
- // this is a command
- function myCommand() {
-+  let counter = 0;
--  let counter = 1;
-   counter++;
- }
+```the code is
+ function calculator(number1, number2, operator) {
+  var result;
 
- // Test with a line break above this line.
- console.log('Test');
+  switch (operator) {
+    case '+':
+      result = number1 + number2;
+      break;
+    case '-':
+      result = number1 - number2;
+      break;
+    case '*':
+      result = number1 * number2;
+      break;
+    case '/':
+      result = number1 / number2;
+      break;
+    case '%':
+      result = number1 % number2;
+      break;
+    default:
+      return "Invalid operator";
+  }
+
+  return `${number1} ${operator} ${number2} = ${result}`;
+}
+
+var num1 = 10;
+var num2 = 5;
+var chosenOperator = '+';
+
+var calculationMessage = calculator(num1, num2, chosenOperator);
+console.log(calculationMessage);
 ```
